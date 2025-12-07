@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style/page.css" />
+    <link rel="stylesheet" href="style/game.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="play-area">
+            <svg height="100%" width="100%" class="play-screen" viewBox="-100 -100 200 200">
+                <g id="ball-group">
+                    <circle cx="0" cy="85" r="5" class="ball"></circle>
+                </g>
+                <g id="block-group"></g>
+                <g id="bar-group">
+                    <rect x="-20" y="90" width="40" height="8" class="bar"></rect>
+                </g>
+                <g id="bonus-group"></g>
+            </svg>
+        </div>
+
+        <div class="control-area">
+            <div>Score: <span id="score">0</span></div>
+            <div class="container">
+                <button class="tap-controls">&lt;</button>
+                <button class="tap-controls">Launch!</button>
+                <button class="tap-controls">&gt;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
